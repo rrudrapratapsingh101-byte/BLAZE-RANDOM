@@ -1,0 +1,2 @@
+# BLAZE-RANDOM
+BLAZE RANDOM Gaming Website
