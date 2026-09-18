@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLAZE RANDOM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-box"><div class="loader-logo">BLAZE</div><h2>LOADING GAMING ZONE...</h2><div class="loader-bar"><i></i></div></div></div>
+
+<header>
+  <div class="topline">THIS WEBSITE IS CREATED BY <b>BLAZE RANDOM</b></div>
+  <nav>
+    <div class="brand">🎮 BLAZE <span>RANDOM</span></div>
+    <div class="navlinks"><a href="#games">Games</a><a href="#calculator">Calculator</a><a href="#youtube">YouTube</a></div>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">⚡ PLAY • SCORE • REPEAT</p>
+    <h1>BLAZE<br><span>RANDOM</span></h1>
+    <p>Colorful browser games, arcade battles, challenges and a stylish calculator — all in one place.</p>
+    <div class="hero-buttons"><a class="btn primary" href="#games">PLAY GAMES 🎮</a><a class="btn" href="#youtube">VISIT YOUTUBE ▶</a></div>
+  </div>
+  <div class="hero-card">
+    <div class="avatar">😎</div><h3>MrRandom</h3><p>PLAYER PROFILE</p>
+    <div class="stats"><span><b id="bestStat">0</b><small>BEST SCORE</small></span><span><b>10</b><small>GAMES</small></span></div>
+  </div>
+</section>
+
+<section id="games" class="section">
+  <div class="section-title"><p class="eyebrow">GAME HUB</p><h2>Choose Your Game</h2><p>Every game is playable directly in this website. Mobile buttons are included where needed.</p></div>
+  <div class="game-grid">
+    <article class="game-card"><div class="game-icon">🎯</div><h3>Target Blaster</h3><p>Hit the moving targets before time runs out.</p><button onclick="openGame('target')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🚗</div><h3>Battle Drive</h3><p>Dodge traffic and survive as long as possible.</p><button onclick="openGame('drive')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🧠</div><h3>Battle Memory</h3><p>Match every pair with the fewest moves.</p><button onclick="openGame('memory')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">☄️</div><h3>Sky Warrior</h3><p>Move through the sky and dodge meteors.</p><button onclick="openGame('sky')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🐍</div><h3>Snake Arena</h3><p>Collect coins and grow without hitting yourself.</p><button onclick="openGame('snake')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🧱</div><h3>Brick Breaker</h3><p>Keep the ball alive and clear the blocks.</p><button onclick="openGame('brick')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🪙</div><h3>Coin Catch</h3><p>Catch falling coins while avoiding bombs.</p><button onclick="openGame('coin')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🌈</div><h3>Color Rush</h3><p>Click the color that matches the target word.</p><button onclick="openGame('color')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">⚡</div><h3>Reaction Test</h3><p>Wait for green, then react as quickly as you can.</p><button onclick="openGame('reaction')">PLAY NOW</button></article>
+    <article class="game-card"><div class="game-icon">🚀</div><h3>Space Shooter</h3><p>Arcade-style shooting: destroy falling space rocks.</p><button onclick="openGame('space')">PLAY NOW</button></article>
+  </div>
+</section>
+
+<section id="calculator" class="section calculator-section">
+ <div class="section-title"><p class="eyebrow">SMART TOOL</p><h2>Stylish Calculator</h2></div>
+ <div class="calculator">
+  <input id="calcDisplay" value="0" readonly>
+  <div class="calc-grid">
+   <button class="danger" onclick="calcClear()">AC</button><button onclick="calcDelete()">DEL</button><button onclick="calcInput('%')">%</button><button class="op" onclick="calcInput('/')">÷</button>
+   <button onclick="calcInput('7')">7</button><button onclick="calcInput('8')">8</button><button onclick="calcInput('9')">9</button><button class="op" onclick="calcInput('*')">×</button>
+   <button onclick="calcInput('4')">4</button><button onclick="calcInput('5')">5</button><button onclick="calcInput('6')">6</button><button class="op" onclick="calcInput('-')">−</button>
+   <button onclick="calcInput('1')">1</button><button onclick="calcInput('2')">2</button><button onclick="calcInput('3')">3</button><button class="op" onclick="calcInput('+')">+</button>
+   <button class="zero" onclick="calcInput('0')">0</button><button onclick="calcInput('.')">.</button><button class="equal" onclick="calcEqual()">=</button>
+  </div>
+ </div>
+</section>
+
+<section id="youtube" class="youtube">
+ <div><p class="eyebrow">CREATOR CORNER</p><h2>Road to 1 Lakh Subscribers 🚀</h2><p>Follow the journey of <b>APEX RED</b> and check out the latest gaming content.</p></div>
+ <a class="ytbtn" href="https://www.youtube.com/@APEX4RED" target="_blank" rel="noopener">SUBSCRIBE ON YOUTUBE ▶</a>
+</section>
+</main>
+
+<footer><b>BLAZE RANDOM</b><span>This website is created by Anuj • Play fair • Keep grinding 🎮</span></footer>
+
+<div id="gameModal" class="modal">
+ <div class="game-window"><button class="close" onclick="closeGame()">✕</button><div id="gameContent"></div></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
